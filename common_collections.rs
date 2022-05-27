@@ -10,6 +10,7 @@ enum SpreadsheetCell {
 fn main() {
     println!("----VECTORS----");
     let mut vec : Vec<i32> = Vec::new();
+    vec = vec![];
     vec.push(7);
     vec.push(11);
     vec.push(13);

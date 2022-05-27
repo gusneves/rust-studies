@@ -50,12 +50,9 @@ fn main() {
     message.call();
 
     let opt: Option<i32> = None;
-    match opt {
-        Some(value) => {
-            println!("Valid value!");
-        }
-        None => {
-            println!("Invalid value!");
-        }
+    if let Some(value) = opt {
+        println!("Valid value!");
+    } else {
+        println!("Invalid value!");
     }
 }
